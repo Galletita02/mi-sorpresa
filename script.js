@@ -1,5 +1,5 @@
 // Fecha de desbloqueo (Cambia la fecha a la que desees)
-const fechaDesbloqueo = new Date("May 9, 2025 07:24:00").getTime();
+const fechaDesbloqueo = new Date("May 9, 2025 17:25:00").getTime();
 
 const countdown = setInterval(function() {
     const ahora = new Date().getTime();
@@ -15,6 +15,7 @@ const countdown = setInterval(function() {
     if (diferencia < 0) {
         clearInterval(countdown);
         document.getElementById("countdown").style.display = "none";
-        document.getElementById("mensaje").style.display = "block";
+        document.getElementById("mensaje").classList.add("visible");
     }
 }, 1000);
+
