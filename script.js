@@ -13,9 +13,9 @@ const countdown = setInterval(function() {
     document.getElementById("countdown").innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
 
     if (diferencia < 0) {
-        clearInterval(countdown);
-        document.getElementById("countdown").style.display = "none";
-        document.getElementById("mensaje").classList.add("visible");
-    }
+    clearInterval(countdown);
+    document.getElementById("countdown").style.display = "none";
+    document.getElementById("mensaje").style.display = "block"; 
+}
 }, 1000);
 
