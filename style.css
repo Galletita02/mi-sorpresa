@@ -11,3 +11,25 @@ body {
     font-weight: bold;
     color: #ff4081;
 }
+.chica {
+    width: 150px;
+    height: auto;
+}
+
+.mediana {
+    width: 300px;
+    height: auto;
+}
+
+.grande {
+    width: 600px;
+    height: auto;
+}
+#mensaje {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#mensaje.visible {
+    opacity: 1;
+}
