@@ -25,11 +25,3 @@ body {
     width: 600px;
     height: auto;
 }
-#mensaje {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-#mensaje.visible {
-    opacity: 1;
-}
